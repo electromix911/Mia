@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenas noches Mia</title>
+
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+      font-family: 'Segoe UI', sans-serif;
+      overflow:hidden;
+    }
+
+    .card{
+      width:350px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius:25px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+      animation: aparecer 2s ease;
+    }
+
+    .foto{
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #ffffff;
+      box-shadow:0 0 20px rgba(255,255,255,0.5);
+      margin-bottom:20px;
+    }
+
+    h1{
+      color:white;
+      font-size:30px;
+      margin:10px 0;
+    }
+
+    p{
+      color:#dbeafe;
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    .estrella{
+      position:absolute;
+      width:3px;
+      height:3px;
+      background:white;
+      border-radius:50%;
+      animation: brillar 3s infinite alternate;
+    }
+
+    @keyframes brillar{
+      from{opacity:0.2;}
+      to{opacity:1;}
+    }
+
+    @keyframes aparecer{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Estrellas -->
+  <div class="estrella" style="top:10%; left:20%;"></div>
+  <div class="estrella" style="top:25%; left:80%;"></div>
+  <div class="estrella" style="top:70%; left:15%;"></div>
+  <div class="estrella" style="top:80%; left:75%;"></div>
+  <div class="estrella" style="top:40%; left:50%;"></div>
+
+  <div class="card">
+
+    <!-- FOTO -->
+    <img src="mia.jpg" alt="Mia" class="foto">
+
+    <h1>🌙 Buenas noches futura ingeniera 🌙</h1>
+
+    <p>
+      Descansa bonita, Mia 💙<br><br>
+      Que tus sueños estén llenos de éxitos,
+      sonrisas y muchos logros.
+      El futuro te espera con un casco de ingeniera
+      porque naciste para brillar ✨
+    </p>
+
+  </div>
+
+</body>
+</html>
